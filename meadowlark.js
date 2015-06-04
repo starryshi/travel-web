@@ -54,6 +54,18 @@ app.get('/tours/request-group-rate',function(req,res){
 	res.render('tours/request-group-rate');
 });
 
+app.get('/nursery-rhyme',function(req,res){
+	res.render('nursery-rhyme');
+});
+app.get('/a/nursery-rhyme',function(req,res){
+	res.json({
+		animal: 'basilisk',
+		bodyPart: 'tail',
+		adjective: 'sharp',
+		noun: 'a needle'
+	});
+});
+
 
 
 function getWeatherData(){
